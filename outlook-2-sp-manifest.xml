@@ -189,7 +189,7 @@
         <Id>68ed1183-98b6-4eff-a9da-3ced59f61d23</Id>
         <Resource>api://localhost:3000/68ed1183-98b6-4eff-a9da-3ced59f61d23</Resource>
         <Scopes>
-          <Scope>Sites.Read.All</Scope>
+          <Scope>https://graph.microsoft.com/sites.read.all</Scope>
           <!-- <Scope>profile</Scope>
           <Scope>User.Read</Scope> -->
         </Scopes>

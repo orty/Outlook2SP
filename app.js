@@ -155,6 +155,9 @@
                 });
         }
 
+        triedWithoutForceConsent = true;
+        getDataWithToken({ forceConsent: false });
+
         Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function(result) {
             if (result.status === "succeeded") {
                 _this.accessToken = result.value;
