@@ -149,6 +149,17 @@
                 function(result) {
                     if (result.status === "succeeded") {
                         console.log('accesstokenasync', result.value);
+                        var getTokenUrl = 'https://login.microsoftonline.com/common/oauth2/v2.0/token?grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&client_id=68ed1183-98b6-4eff-a9da-3ced59f61d23&client_secret=uaxITU03?{dzpxQRJF979:!&assertion=' + result.value + '&scope=user.read sites.read.all profile&requested_token_use=on_behalf_of'
+
+                        $.ajax({
+                            url: getTokenUrl,
+                            method: 'POST'
+                        }).done(function(item) {
+                            console.log(item);
+                        }).fail(function(error) {
+                            console.log(error)
+                        });
+
                     } else {
                         handleClientSideErrors(result);
                     }

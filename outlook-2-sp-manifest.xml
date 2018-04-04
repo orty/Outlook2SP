@@ -12,7 +12,7 @@
   <Id>ffa93c5d-3e10-49f8-8310-7d13b66b477b</Id>
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
-  <Version>1.0.0.2</Version>
+  <Version>1.0.0.3</Version>
   <ProviderName>Powell Software</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
@@ -28,9 +28,7 @@
 
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
   <AppDomains>
-    <AppDomain>AppDomain1</AppDomain>
-    <AppDomain>AppDomain2</AppDomain>
-    <AppDomain>AppDomain3</AppDomain>
+    <AppDomain>https://login.microsoftonline.com</AppDomain>
   </AppDomains>
   <!--End Basic Settings. -->
 
