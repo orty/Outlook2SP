@@ -12,7 +12,7 @@
   <Id>ffa93c5d-3e10-49f8-8310-7d13b66b477b</Id>
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
-  <Version>1.0.0.1</Version>
+  <Version>1.0.0.2</Version>
   <ProviderName>Powell Software</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
@@ -189,9 +189,9 @@
         <Id>68ed1183-98b6-4eff-a9da-3ced59f61d23</Id>
         <Resource>api://localhost:3000/68ed1183-98b6-4eff-a9da-3ced59f61d23</Resource>
         <Scopes>
-          <Scope>https://graph.microsoft.com/sites.read.all</Scope>
-          <!-- <Scope>profile</Scope>
-          <Scope>User.Read</Scope> -->
+          <Scope>sites.read.all</Scope>
+          <Scope>profile</Scope>
+          <Scope>user.read</Scope>
         </Scopes>
       </WebApplicationInfo>
     </VersionOverrides>
